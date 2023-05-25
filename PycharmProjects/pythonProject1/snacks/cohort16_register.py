@@ -1,4 +1,19 @@
-def cohort16_register():
+def cohort16_register2():
+    names_age = {"tolu": 23, "jide": 45, "bola": 34, "afolabi": 20}
+
+    name = input("Enter your name: ").lower()
+
+    if name in names_age:
+        age = names_age[name]
+        return f"Hi, {name}, you are {age} years old."
+    else:
+        age = int(input("Your name is not in the dictionary. Please enter your age: "))
+        names_age[name] = age
+        return f"Hi, {name}, you are {age} years old (added to the dictionary)"
+
+
+
+def cohort16_register1():
     list_of_student_names_available = {
         'shola': 24,
         'tolu': 34,
@@ -18,24 +33,11 @@ def cohort16_register():
             # if new_name == names:
             return f"Hi {new_name} Your age is {list_of_student_names_available[new_name]}"
 
-    ## 0R
+    ## AN ALTERNATIVE THAT WORKS
 
 
-def cohort16_register2():
-    names_age = {"tolu": 23, "jide": 45, "bola": 34, "afolabi": 20}
 
-    name = input("Enter your name: ").lower()
-
-    if name in names_age:
-        age = names_age[name]
-        return f"Hi, {name}, you are {age} years old."
-    else:
-        age = int(input("Your name is not in the dictionary. Please enter your age: "))
-        names_age[name] = age
-        return f"Hi, {name}, you are {age} years old (added to the dictionary)"
-
-
-result = cohort16_register()
+result = cohort16_register1()
 print(result)
 # cohort16_register2()
-cohort16_register()
+cohort16_register1()
