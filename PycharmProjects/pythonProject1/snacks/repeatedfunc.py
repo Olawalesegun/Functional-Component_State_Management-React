@@ -10,6 +10,8 @@ def repeated_func(*args):
 
 
 # Another approach using the counter method
+# In here we had to import the collection package to use the counter
+
 
 def repeated_func1(*args):
     count = Counter(args)
