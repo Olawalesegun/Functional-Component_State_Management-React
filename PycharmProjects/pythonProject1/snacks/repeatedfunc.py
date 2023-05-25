@@ -5,6 +5,7 @@ from collections import Counter
 
 def repeated_func(*args):
     print(statistics.mode(args))
+    print(statistics.mode)
     return statistics.mode(args)
 
 
@@ -12,7 +13,8 @@ def repeated_func(*args):
 
 def repeated_func1(*args):
     count = Counter(args)
-    return count.most_common(args)
+    print(count.most_common(1))
+    return count.most_common(2)
     # highest_no = Counter.most_common(args)
     # print(highest_no)
     # return highest_no
@@ -47,5 +49,7 @@ def repeated_func1(*args):
 # for n_count in new_count:
 #     if n_count == n_count:
 
-repeated_func1(4, 5, 7, 7, 8, 8, 3, 6, 9, 3, 4, 2, 2, 2)
+
 repeated_func(1, 2, 3, 3, 4, 4, 4, 5, 5)
+repeated_func1(4, 5, 7, 7, 8, 8, 3, 6, 9, 3, 4, 4, 3, 2, 2, 2)
+
