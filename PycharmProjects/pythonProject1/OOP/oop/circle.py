@@ -17,7 +17,7 @@ class Circle:
     #
     # def perimeter_of_circle(self):
     #     area = math.pi * self.radius ** 2
-             ##
+    ##
     def areas_of_radius(self):
         area = math.pi * self.radius ** 2
         return f"The areas of radius is {area}"
@@ -30,4 +30,4 @@ class Circle:
 circle1 = Circle(18)
 print(circle1.perimeter_of_circle())
 
-#self.radius = math.sqrt(value / math.pi)
+# self.radius = math.sqrt(value / math.pi)
